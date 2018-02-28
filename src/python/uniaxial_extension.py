@@ -441,7 +441,7 @@ if __name__ == "__main__":
     usePressureBasis = False
     # Arguments: compressible, useGeneratedMesh, zeroLoad, usePressureBasis
     solveModel(False, False, False, False)
-    solveModel(True, False, False, False)
+    #solveModel(True, False, False, False)
     solveModel(False, True, False, False)
     solveModel(False, False, True, False)
     solveModel(False, True, False, True)
