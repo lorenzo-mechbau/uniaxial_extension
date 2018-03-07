@@ -162,7 +162,7 @@
      4.  #Values=1
       Value indices:     1
       Scale factor indices:    4
-   4.   constant(2;3)*constant*constant, no modify, grid based.
+   4.   constant*constant*constant, no modify, grid based.
      #xi1=0, #xi2=0, #xi3=0
  5) del U_del n, field,  rectangular cartesian, #Components=4
    1.   l.simplex(2;3)*l.simplex*l.simplex, no modify, standard node based.
@@ -207,7 +207,7 @@
      4.  #Values=1
       Value indices:     1
       Scale factor indices:    4
-   4.   constant(2;3)*constant*constant, no modify, grid based.
+   4.   constant*constant*constant, no modify, grid based.
      #xi1=0, #xi2=0, #xi3=0
  6) DeformedGeometry, coordinate, rectangular cartesian, #Components=3
    x.   l.simplex(2;3)*l.simplex*l.simplex, no modify, standard node based.
@@ -254,23 +254,23 @@
       Scale factor indices:    4
  Element:            1 0 0
    Values:
-     1.4954269972451624E+00
-     0.0000000000000000E+00
+     1.4954269972451459E+00
+     3.7007434154171883E-17
    Nodes:
            1           2           4           6
    Scale factors:
      1.0000000000000000E+00   1.0000000000000000E+00   1.0000000000000000E+00   1.0000000000000000E+00
  Element:            2 0 0
    Values:
-     1.4954269972451577E+00
-     0.0000000000000000E+00
+     1.4954269972451790E+00
+     -9.2518585385429716E-17
    Nodes:
            1           4           3           7
    Scale factors:
      1.0000000000000000E+00   1.0000000000000000E+00   1.0000000000000000E+00   1.0000000000000000E+00
  Element:            3 0 0
    Values:
-     1.4954269972451526E+00
+     1.4954269972451579E+00
      3.7007434154171883E-17
    Nodes:
            1           6           7           5
@@ -278,7 +278,7 @@
      1.0000000000000000E+00   1.0000000000000000E+00   1.0000000000000000E+00   1.0000000000000000E+00
  Element:            4 0 0
    Values:
-     1.4954269972451781E+00
+     1.4954269972451817E+00
      0.0000000000000000E+00
    Nodes:
            6           4           7           8
@@ -286,8 +286,8 @@
      1.0000000000000000E+00   1.0000000000000000E+00   1.0000000000000000E+00   1.0000000000000000E+00
  Element:            5 0 0
    Values:
-     1.4954269972452041E+00
-     7.4014868308343765E-17
+     1.4954269972452054E+00
+     -3.7007434154171883E-17
    Nodes:
            1           6           4           7
    Scale factors:
