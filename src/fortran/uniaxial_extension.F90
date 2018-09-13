@@ -93,7 +93,6 @@ CONTAINS
 
     TYPE(cmfe_BasisType)                  :: basis,pressureBasis
     TYPE(cmfe_BoundaryConditionsType)     :: boundaryConditions
-    TYPE(cmfe_ComputationEnvironmentType) :: computationEnvironment
     TYPE(cmfe_CoordinateSystemType)       :: coordinateSystem
     TYPE(cmfe_DecompositionType)          :: decomposition
     TYPE(cmfe_EquationsType)              :: equations
@@ -137,9 +136,8 @@ CONTAINS
     END IF
 
     ! Get the number of computational nodes and this computational node number
-    CALL cmfe_ComputationEnvironment_Initialise(computationEnvironment,err)
-    CALL cmfe_ComputationEnvironment_NumberOfWorldNodesGet(computationEnvironment,numberOfComputationalNodes,err)
-    CALL cmfe_ComputationEnvironment_WorldNodeNumberGet(computationEnvironment,computationalNodeNumber,err)
+    CALL cmfe_ComputationalNumberOfNodesGet(NumberOfComputationalNodes,Err)
+    CALL cmfe_ComputationalNodeNumberGet(ComputationalNodeNumber,Err)
 
     CALL cmfe_CoordinateSystem_Initialise(coordinateSystem,Err)
     CALL cmfe_CoordinateSystem_CreateStart(coordinateSystemUserNumber,coordinateSystem,Err)
