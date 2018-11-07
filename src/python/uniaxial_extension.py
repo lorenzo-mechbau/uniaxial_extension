@@ -110,8 +110,8 @@ def solveModel(compressible, useGeneratedMesh, zeroLoad, usePressureBasis):
             generatedMesh.basis = [basis,pressureBasis]
         else:
             generatedMesh.basis = [basis]
-            generatedMesh.extent = [width,length,height]
-            generatedMesh.numberOfElements = [numberGlobalXElements,numberGlobalYElements,numberGlobalZElements]
+        generatedMesh.extent = [width,length,height]
+        generatedMesh.numberOfElements = [numberGlobalXElements,numberGlobalYElements,numberGlobalZElements]
         # Finish the creation of a generated mesh in the region
         generatedMesh.CreateFinish(meshUserNumber,mesh)
 

@@ -251,13 +251,11 @@ CONTAINS
         CALL cmfe_GeneratedMesh_BasisSet(generatedMesh,[basis,pressureBasis],Err)
       ELSE
         CALL cmfe_GeneratedMesh_BasisSet(generatedMesh,basis,Err)
-        ! TODO those should not be in else, right?
-        CALL cmfe_GeneratedMesh_ExtentSet(GeneratedMesh,[width,length,height],Err)
-        CALL cmfe_GeneratedMesh_NumberOfElementsSet(GeneratedMesh, &
-         & [numberGlobalXElements,numberGlobalYElements, &
-         & numberGlobalZElements],Err)
-        ! end TODO
       END IF
+      CALL cmfe_GeneratedMesh_ExtentSet(GeneratedMesh,[width,length,height],Err)
+      CALL cmfe_GeneratedMesh_NumberOfElementsSet(GeneratedMesh, &
+        & [numberGlobalXElements,numberGlobalYElements, &
+        & numberGlobalZElements],Err)
       CALL cmfe_GeneratedMesh_CreateFinish(GeneratedMesh,MeshUserNumber,Mesh,Err)
     ELSE
       ! Start the creation of a manually generated mesh in the region
