@@ -449,3 +449,6 @@ if __name__ == "__main__":
     solveModel(False, True, False, False)
     solveModel(False, False, True, False)
     solveModel(False, True, False, True)
+
+# Finalise OpenCMISS-Iron
+iron.Finalise()
